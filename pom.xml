@@ -10,7 +10,7 @@
         <version>2.2.1.RELEASE</version>
         <relativePath /> <!-- lookup parent from repository -->
     </parent>
-    
+
     <groupId>com.spintech</groupId>
     <artifactId>testtask</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -32,7 +32,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>{spring-cloud-version}</version>
+                <version>${spring-cloud-version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -95,10 +95,16 @@
 
     <repositories>
         <repository>
+            <id>central</id>
+            <name>Maven Central</name>
+            <url>https://repo1.maven.org/maven2/</url>
+        </repository>
+        <repository>
             <id>jcenter-snapshots</id>
             <name>jcenter</name>
             <url>http://oss.jfrog.org/artifactory/oss-snapshot-local/</url>
         </repository>
+
     </repositories>
 
     <build>
